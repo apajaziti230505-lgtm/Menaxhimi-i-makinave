@@ -15,13 +15,6 @@ h1,h2{ font-weight:700; }
     <div class="container-box">
         <h1 class="text-center mb-4">🚗 Menaxhimi i Makinave</h1>
 
-        <!-- Zgjedh rolin -->
-        <div id="roleSelect" class="text-center mb-4">
-            <h2>Zgjidh rolin tënd</h2>
-            <button class="btn btn-primary me-2" onclick="setRole('user')">Përdorues</button>
-            <button class="btn btn-success" onclick="setRole('admin')">Admin</button>
-        </div>
-
         <!-- Search / Filter -->
         <div class="mb-3">
             <input id="filterInput" class="form-control" placeholder="Kerko me marke, model ose vit" oninput="filterCars()">
@@ -42,8 +35,8 @@ h1,h2{ font-weight:700; }
         </table>
 
         <hr>
-        <!-- Admin Panel -->
-        <div id="adminPanel" style="display:none;">
+        <!-- Admin Panel (shfaqet gjithmonë) -->
+        <div id="adminPanel">
             <h2 class="h4 mt-4">Shto Makine</h2>
             <div class="row g-3 mb-3">
                 <div class="col-md-3"><input id="marka" class="form-control" placeholder="Marka"></div>
