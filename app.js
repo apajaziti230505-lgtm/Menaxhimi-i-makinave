@@ -1,17 +1,5 @@
 const apiUrl = "https://api.jsonbin.io/v3/b/693868e6d0ea881f401db03e/latest";
 let carsData = [];
-let role = ""; // 'user' ose 'admin'
-
-function setRole(selectedRole){
-    role = selectedRole;
-    document.getElementById("roleSelect").style.display = "none"; // fsheh modal zgjedhjeje
-    if(role === "admin"){
-        document.getElementById("adminPanel").style.display = "block";
-    } else {
-        document.getElementById("adminPanel").style.display = "none";
-    }
-    loadCars(); // ngarko makinat pasi zgjidhet roli
-}
 
 async function loadCars() {
     try {
@@ -56,3 +44,6 @@ async function addCar(){
 async function deleteCar(){
     alert("Fshirja vetem ne server qe lejon DELETE");
 }
+
+// Ngarko makinat kur hapet faqja
+window.onload = loadCars;
